@@ -49,7 +49,7 @@ const copyState1 = state.map(st => ({...st, address: {...st.address}})) //тож
 
 //id = 3, "Ann" => "Anne"
 
-const copyState = state.map(st => {
+const copyState = state.map((st) => {
     return st.id === 3 ? {...st, name: "Anne"} : st
 })
 
